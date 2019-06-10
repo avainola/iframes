@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "build",
+    "jsx": "react"
+    // "target": "ES5",
+    // "rootDir": "src"
+    // "emitDecoratorMetadata": true,
+  }
+}

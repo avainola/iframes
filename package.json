@@ -1,0 +1,45 @@
+{
+  "name": "iframes",
+  "version": "1.0.0",
+  "description": "multiple iframes intercommunication",
+  "repository": "https://github.com/avainola/iframes",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run merchant-page & npm run ad-server & npm run merchant-scripts",
+    "merchant-page": "http-server ./merchant-page -p 80",
+    "ad-server": "tsc -w -p ad-server & nodemon ad-server/build/index.js",
+    "merchant-scripts": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --mode production",
+    "test": "jest",
+    "test:watch": "jest --watch --verbose"
+  },
+  "author": "Artur Vainola",
+  "license": "ISC",
+  "dependencies": {
+    "qs": "^6.9.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/jest": "^24.9.0",
+    "@types/jsdom": "^12.2.4",
+    "@types/qs": "^6.9.0",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/uuid": "^3.4.4",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "http-server": "^0.11.1",
+    "jest": "^24.9.0",
+    "jsdom": "^16.0.0",
+    "nodemon": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.7.4",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3",
+    "webpack-dev-server": "^3.7.1"
+  }
+}

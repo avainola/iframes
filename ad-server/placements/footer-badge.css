@@ -1,0 +1,9 @@
+.container {
+  background-color: plum;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  display: inline-block;
+}

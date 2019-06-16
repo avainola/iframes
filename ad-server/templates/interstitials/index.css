@@ -1,0 +1,10 @@
+.dialog {
+  padding: 20%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.container {
+  padding: 40px;
+  border-radius: 8px;
+  background: white;
+}

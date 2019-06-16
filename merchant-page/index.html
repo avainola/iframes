@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>IFrames proto</title>
+    <script
+      async
+      src="http://localhost:8080/merchant.js?uci=1234567890&country=GB"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Merchant page</h1>
+    <div>
+      <label for="merchant-selector">Select merchant:</label>
+      <select
+        name="merchant-selector"
+        id="merchant-selector"
+        onchange="handleSelectMerchant(this.value);"
+      ></select>
+    </div>
+    <div id="placements"></div>
+  </body>
+</html>

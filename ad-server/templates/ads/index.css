@@ -1,0 +1,29 @@
+:root {
+  --background-color: lightgray;
+}
+
+.container {
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--background-color);
+}
+
+.link {
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  font: inherit;
+  padding: 0;
+}
+
+.legal {
+  font-size: 12px;
+}
+
+p {
+  margin: 0;
+}
+
+button:focus {
+  outline: 2px solid red;
+}
